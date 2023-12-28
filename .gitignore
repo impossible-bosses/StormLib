@@ -165,3 +165,10 @@ pip-log.txt
 .DS_Store
 **/project.xcworkspace
 **/xcuserdata
+
+# Zig
+zig-cache/
+zig-out/
+
+# Sublime
+*.sublime-workspace
