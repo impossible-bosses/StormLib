@@ -266,6 +266,8 @@ pub fn build(b: *std.Build) void
     });
     lib.defineCMacro("_7ZIP_ST", null);
     lib.defineCMacro("BZ_STRICT_ANSI", null);
+    lib.installHeader("src/StormLib.h", "StormLib.h");
+    lib.installHeader("src/StormPort.h", "StormPort.h");
     b.installArtifact(lib);
 
     // const main_tests = b.addTest(.{
